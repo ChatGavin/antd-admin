@@ -1,10 +1,10 @@
-# nocode-admin
+# mono-flow
 
-NoCode Admin
+Mono Flow
 
 ## 项目介绍
 
-NoCode/LowCode 相关的项目实践
+基于零代码/低代码开发应用的工作流工具
 
 ## 项目愿景
 
