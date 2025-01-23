@@ -39,7 +39,6 @@ jobs:
         run: yarn install
       - name: Build project
         run: yarn build:admin
-        working-directory: ./ # 确保这是项目的根目录
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
