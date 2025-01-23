@@ -27,22 +27,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # Not needed if lastUpdated is not enabled
+          fetch-depth: 0
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 22
-          cache: npm #
+          cache: yarn
       - name: Install yarn
         run: npm install -g yarn
       - name: Install dependencies
         run: yarn install
       - name: Build project
-        run: yarn build:admin
+        run: yarn workspace admin run build
+        working-directory: ./
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          path: ./apps/admin/dist # build output directory
+          name: admin-dist
+          path: ./apps/admin/dist
 
   # Deployment job
   deploy:
@@ -53,6 +55,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: admin-dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./apps/admin/dist
