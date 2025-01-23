@@ -11,8 +11,11 @@
     "low-code",
     "workflow"
   ],
+  "workspaces": [
+    "apps/*"
+  ],
   "scripts": {
-    "dev:admin": "pnpm --filter admin dev",
-    "build:admin": "pnpm --filter admin build"
+    "dev:admin": "yarn workspaces run dev",
+    "build:admin": "yarn workspaces run build"
   }
 }
