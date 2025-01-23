@@ -61,6 +61,6 @@ jobs:
           name: admin-dist
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: peaceiris/actions-gh-pages@v3
+        uses: actions/deploy-pages@v2
         with:
           publish_dir: ./apps/admin/dist
