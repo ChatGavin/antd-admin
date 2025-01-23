@@ -1,0 +1,18 @@
+{
+  "name": "mono-flow",
+  "author": "Gavin Lin",
+  "description": "基于零代码/低代码开发应用的工作流工具",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "mono-flow",
+    "no-code",
+    "low-code",
+    "workflow"
+  ],
+  "scripts": {
+    "dev:admin": "pnpm --filter admin dev",
+    "build:admin": "pnpm --filter admin build"
+  }
+}
