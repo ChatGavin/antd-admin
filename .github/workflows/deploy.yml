@@ -36,7 +36,7 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile # 使用冻结的锁文件
         working-directory: ./ # 确保这是项目的根目录
       - name: Build project
         run: pnpm --filter admin run build
