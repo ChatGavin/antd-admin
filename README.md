@@ -10,7 +10,4 @@ Mono Flow
 
 尽可能使用 Cursor 协助开发,记录使用 Cursor 的技巧思路,锻炼与 AI 的沟通能力
 
-## 项目结构
-
-mono-flow
-├── docs # 文档目录
+## 项目思考
