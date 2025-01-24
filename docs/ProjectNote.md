@@ -26,3 +26,5 @@
 - 在 package.json 中配置 scripts 命令, 打包运行 admin 项目
   - ~~"build:admin": "pnpm --filter admin build", 通过 pnpm 执行指定目录的命令~~
   - "build:admin": "yarn build:admin", 通过 yarn 执行指定目录的命令
+- 使用 github pages 提供的 deploy.yml 文件, 部署到 github pages
+  - 注意打包后的 base 路径, 需要结合二级域名使用
