@@ -1,6 +1,6 @@
-# mono-flow
+# MonoFlow
 
-MonoFlow 是基于零代码/低代码开发应用的工作流工具
+MonoFlow 是基于零代码/低代码开发的工作流实践
 
 ## 项目愿景
 
