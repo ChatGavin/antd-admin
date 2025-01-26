@@ -1,6 +1,6 @@
 # MonoFlow
 
-MonoFlow 预览地址: [https://mono-flow.gavin.chat/](https://mono-flow.gavin.chat/)
+预览地址: [https://mono-flow.gavin.chat](https://mono-flow.gavin.chat)
 
 ## 项目介绍
 
