@@ -17,3 +17,4 @@
 
 - 部署到 GitHub Pages 时, 需要指定 lockfile, 使用 yarn 管理依赖
 - 部署时请注意打包后的静态资源的 base 路径设置, 以确保在 GitHub Pages 上资源被正确加载
+- 部署到 GitHub Pages 时, 需要使用仓库名作为基础路径 /mono-flow/, 但通过自定义域名访问时, 需要将 base 路径设置为 /
